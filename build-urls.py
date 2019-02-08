@@ -17,3 +17,5 @@ with app.test_request_context():
     print(url_for('login'))
     print(url_for('login', next='/'))
     print(url_for('profielpagina', gebruikernaam='Joep Meloen'))
+    
+app.run(debug=True, host='0.0.0.0', port=8088)
